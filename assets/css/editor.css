@@ -1,0 +1,41 @@
+/*  edoC CSS stylesheet
+ *  Gary Hammock
+ *  MIT License
+*/
+
+#newButton {
+  padding-left: 2.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -250 1800 1800'><path fill='rgb(255, 255, 255, 1)' d='M1468 1156q28-28 48-76t20-88V-160q0-40-28-68t-68-28H96q-40 0-68 28T0-160v1600q0 40 28 68t68 28h896q40 0 88-20t76-48zm-444 244v-376h376q-10 29-22 41l-313 313q-12 12-41 22zm384-1528V896H992q-40 0-68 28t-28 68v416H128V-128h1280z'/></svg>");
+  background-position: 0.5rem;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+#openButton {
+  padding-left: 2.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -250 2000 1880'><path fill='rgb(255, 255, 255, 1)' d='M1781 745q0-35-53-35H640q-40 0-85.5 21.5T483 784l-294 363q-18 24-18 40 0 35 53 35h1088q40 0 86-22t71-53l294-363q18-22 18-39zM640 582h768V422q0-40-28-68t-68-28H736q-40 0-68-28t-28-68v-64q0-40-28-68t-68-28H224q-40 0-68 28t-28 68v853l256-315q44-53 116-87.5T640 582zm1269 163q0 62-46 120l-295 363q-43 53-116 87.5t-140 34.5H224q-92 0-158-66T0 1126V166Q0 74 66 8t158-66h320q92 0 158 66t66 158v32h544q92 0 158 66t66 158v160h192q54 0 99 24.5t67 70.5q15 32 15 68z'/></svg>");
+  background-position: 0.5rem;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+#saveButton {
+  padding-left: 2.5rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 -250 1800 1800'><path fill='rgb(255, 255, 255, 1)' d='M384 0h768v384H384V0zm896 0h128v896q0 14-10 38.5t-20 34.5l-281 281q-10 10-34 20t-39 10V864q0-40-28-68t-68-28H352q-40 0-68 28t-28 68v416H128V0h128v416q0 40 28 68t68 28h832q40 0 68-28t28-68V0zM896 928v320q0 13-9.5 22.5T864 1280H672q-13 0-22.5-9.5T640 1248V928q0-13 9.5-22.5T672 896h192q13 0 22.5 9.5T896 928zm640-32V-32q0-40-28-68t-68-28H96q-40 0-68 28T0-32v1344q0 40 28 68t68 28h928q40 0 88-20t76-48l280-280q28-28 48-76t20-88z'/></svg>");
+  background-position: 0.5rem;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+}
+
+.CodeMirror-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.CodeMirror-focused .cm-matchhighlight {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFklEQVQI12NgYGBgkKzc8x9CMDAwAAAmhwSbidEoSQAAAABJRU5ErkJggg==);
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+.cm-matchhighlight {background-color: lightgreen; color: black !important; }
+.CodeMirror-selection-highlight-scrollbar {background-color: green}
