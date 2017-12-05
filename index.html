@@ -11,53 +11,33 @@
     <link rel="stylesheet" href="assets/css/editor.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/codemirror/css/codemirror.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/3024-day.css">
     <link rel="stylesheet" href="assets/codemirror/theme/3024-night.css">
     <link rel="stylesheet" href="assets/codemirror/theme/abcdef.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/ambiance-mobile.css">
     <link rel="stylesheet" href="assets/codemirror/theme/ambiance.css">
     <link rel="stylesheet" href="assets/codemirror/theme/base16-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/base16-light.css">
     <link rel="stylesheet" href="assets/codemirror/theme/bespin.css">
     <link rel="stylesheet" href="assets/codemirror/theme/blackboard.css">
     <link rel="stylesheet" href="assets/codemirror/theme/cobalt.css">
     <link rel="stylesheet" href="assets/codemirror/theme/colorforth.css">
     <link rel="stylesheet" href="assets/codemirror/theme/dracula.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/duotone-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/duotone-light.css">
     <link rel="stylesheet" href="assets/codemirror/theme/eclipse.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/elegant.css">
     <link rel="stylesheet" href="assets/codemirror/theme/erlang-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/hopscotch.css">
     <link rel="stylesheet" href="assets/codemirror/theme/icecoder.css">
     <link rel="stylesheet" href="assets/codemirror/theme/isotope.css">
     <link rel="stylesheet" href="assets/codemirror/theme/lesser-dark.css">
     <link rel="stylesheet" href="assets/codemirror/theme/liquibyte.css">
     <link rel="stylesheet" href="assets/codemirror/theme/material.css">
     <link rel="stylesheet" href="assets/codemirror/theme/mbo.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/mdn-like.css">
     <link rel="stylesheet" href="assets/codemirror/theme/midnight.css">
     <link rel="stylesheet" href="assets/codemirror/theme/monokai.css">
     <link rel="stylesheet" href="assets/codemirror/theme/neat.css">
     <link rel="stylesheet" href="assets/codemirror/theme/neo.css">
     <link rel="stylesheet" href="assets/codemirror/theme/night.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/panda-syntax.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/paraiso-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/paraiso-light.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/pastel-on-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/railscasts.css">
     <link rel="stylesheet" href="assets/codemirror/theme/rubyblue.css">
     <link rel="stylesheet" href="assets/codemirror/theme/seti.css">
     <link rel="stylesheet" href="assets/codemirror/theme/solarized.css">
     <link rel="stylesheet" href="assets/codemirror/theme/the-matrix.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/tomorrow-night-bright.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/tomorrow-night-eighties.css">
     <link rel="stylesheet" href="assets/codemirror/theme/ttcn.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/twilight.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/vibrant-ink.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/xq-dark.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/xq-light.css">
-    <link rel="stylesheet" href="assets/codemirror/theme/yeti.css">
     <link rel="stylesheet" href="assets/codemirror/theme/zenburn.css">
   </head>
   <body class="bg-light text-dark">
@@ -90,6 +70,8 @@
               <option value="clike" data-mimetype="text/x-csharp">C#</option>
               <option value="clike" data-mimetype="text/x-c++src">C++</option>
               <option value="css" data-mimetype="text/css">CSS</option>
+              <option value="go" data-mimetype="text/x-go">Go</option>
+              <option value="groovy" data-mimetype="text/x-groovy">Groovy</option>
               <option value="htmlmixed" data-mimetype="text/html">HTML</option>
               <option value="clike" data-mimetype="text/x-java">Java</option>
               <option value="javascript" data-mimetype="text/javascript">JavaScript</option>
@@ -99,14 +81,18 @@
               <option value="sql" data-mimetype="text/x-mysql">MySQL</option>
               <option value="clike" data-mimetype="text/x-objectivec">Objective-C</option>
               <option value="null" data-mimetype="text/plain" selected>Plain Text</option>
+              <option value="php" data-mimetype="text/x-php">PHP</option>
               <option value="powershell" data-mimetype="application/x-powershell">PowerShell</option>
-              <option value="python" data-mimetype="application/x-python">Python</option>
+              <option value="python" data-mimetype="text/x-python">Python</option>
               <option value="r" data-mimetype="text/x-rsrc">R</option>
               <option value="ruby" data-mimetype="text/x-ruby">Ruby</option>
               <option value="rust" data-mimetype="text/x-rustsrc">Rust</option>
+              <option value="sass" data-mimetype="text/x-sass">SASS</option>
               <option value="shell" data-mimetype="text/x-sh">Shell</option>
               <option value="sql" data-mimetype="text/x-sql">SQL</option>
               <option value="sql" data-mimetype="text/x-sqllite">SQLite</option>
+              <option value="swift" data-mimetype="text/x-swift">Swift</option>
+              <option value="vb" data-mimetype="text/x-vb">VB.NET</option>
               <option value="vbscript" data-mimetype="text/vbscript">VB Script</option>
               <option value="xml" data-mimetype="text/xml">XML</option>
             </select>
@@ -114,8 +100,8 @@
           <div class="form-group col-sm-4">
             <label for="themeDropdown" class="col-6 col-form-label">Style/Theme</label>
             <select id="themeDropdown" class="col-6 form-control">
-              <option value="abcdef">abcdef</option>
               <option value="3024-night">3024-Night</option>
+              <option value="abcdef">abcdef</option>
               <option value="ambiance">Ambiance</option>
               <option value="base16-dark">Base16 Dark</option>
               <option value="bespin">Bespin</option>
@@ -188,21 +174,27 @@
     <script src="assets/codemirror/addon/display/rulers.js"></script>
 
     <!-- Language Assets -->
-    <script src="assets/codemirror/mode/meta.js"></script>
-    <script src="assets/codemirror/mode/shell.js"></script>
     <script src="assets/codemirror/mode/clike.js"></script>
     <script src="assets/codemirror/mode/css.js"></script>
+    <script src="assets/codemirror/mode/go.js"></script>
+    <script src="assets/codemirror/mode/groovy"></script>
     <script src="assets/codemirror/mode/htmlmixed.js"></script>
     <script src="assets/codemirror/mode/javascript.js"></script>
-    <script src="assets/codemirror/mode/sql.js"></script>
-    <script src="assets/codemirror/mode//powershell.js"></script>
+    <script src="assets/codemirror/mode/meta.js"></script>
+    <script src="assets/codemirror/mode/php.js"></script>
+    <script src="assets/codemirror/mode/powershell.js"></script>
     <script src="assets/codemirror/mode/python.js"></script>
     <script src="assets/codemirror/mode/r.js"></script>
     <script src="assets/codemirror/mode/ruby.js"></script>
     <script src="assets/codemirror/mode/rust.js"></script>
+    <script src="assets/codemirror/mode/sass.js"></script>
+    <script src="assets/codemirror/mode/shell.js"></script>
+    <script src="assets/codemirror/mode/sql.js"></script>
     <script src="assets/codemirror/mode/stex.js"></script>
-    <script src="assets/codemirror/mode/xml.js"></script>
+    <script src="assets/codemirror/mode/swift.js"></script>
+    <script src="assets/codemirror/mode/vs.js"></script>
     <script src="assets/codemirror/mode/vbscript.js"></script>
+    <script src="assets/codemirror/mode/xml.js"></script>
 
     <script src="assets/js/editor.js"></script>
   </body>
